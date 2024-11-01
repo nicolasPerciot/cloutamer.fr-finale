@@ -1,0 +1,97 @@
+{
+    "home": 
+    {
+        "text"          : "Welcome To",
+        "title"         : "CloudTamer"
+    },
+    "services":
+    {
+        "title"         : "Our Services",
+        "content"       : 
+        [
+            {
+                "title"                 : "Web Development",
+                "icon"                  : "fas fa-laptop-code",
+                "desc"                  : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna erat, laoreet sit amet leo in, auctor gravida enim. Quisque lacus nisl, congue quis ex eu, commodo commodo ipsum. Suspendisse vel libero in lorem auctor convallis. Nulla mollis tincidunt bibendum. Nam mattis mauris pharetra neque semper sollicitudin. Donec fringilla massa nec dignissim egestas. Cras in mauris blandit, accumsan urna a, rutrum nisl. Etiam in viverra neque. Quisque nec ex eget dui rhoncus laoreet dapibus eget mi. Vivamus convallis aliquam enim in pulvinar. Integer vitae tellus eu lectus vestibulum tincidunt eu eu diam.",
+                "carousel_images"       : ["features/portfolio/1.jpg", "features/portfolio/2.jpg", "features/portfolio/3.jpg"]
+            },
+            {
+                "title"                 : "Application / Mobile",
+                "icon"                  : "fas fa-network-wired",
+                "desc"                  : "Application for PC (Windows, Linux) and mobile devices (Android, IOS). \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis urna erat, laoreet sit amet leo in, auctor gravida enim. Quisque lacus nisl, congue quis ex eu, commodo commodo ipsum. Suspendisse vel libero in lorem auctor convallis. Nulla mollis tincidunt bibendum. Nam mattis mauris pharetra neque semper sollicitudin. Donec fringilla massa nec dignissim egestas. Cras in mauris blandit, accumsan urna a, rutrum nisl. Etiam in viverra neque. Quisque nec ex eget dui rhoncus laoreet dapibus eget mi. Vivamus convallis aliquam enim in pulvinar. Integer vitae tellus eu lectus vestibulum tincidunt eu eu diam.",
+                "carousel_images"       : ["features/portfolio/1.jpg", "features/portfolio/2.jpg", "features/portfolio/3.jpg"]
+            },
+            {
+                "title"                 : "Artificial Intelligence",
+                "icon"                  : "fas fa-database",
+                "desc"                  : "Model of machine learning and deep learning (Computer vision, NLP)",
+                "carousel_images"       : ["features/portfolio/1.jpg", "features/portfolio/2.jpg", "features/portfolio/3.jpg"]
+            }
+        ]
+    },
+    "portfolio":
+    {
+        "title"         : "Portfolio",
+        "content"       : 
+        [
+            {
+                "title"     : "GitHub Repository",
+                "img"       : "features/portfolio/1.jpg",
+                "desc"      : "Some of our projects"
+            },
+            {
+                "title"     : "iHeart Project",
+                "client"    : "CHU Dijon and ICMUB",
+                "category"  : "AI and website",
+                "img"       : "features/portfolio/2.jpg",
+                "desc"      : "A Medical Project involving AI Model Development to help patients to predict their risk of cardiovascular disease. With retinal section images as a basis."
+            },
+            {
+                "title"     : "Aroma Project",
+                "client"    : "CHU Dijon and ICMUB",
+                "category"  : "AI and website",
+                "img"       : "features/portfolio/3.jpg",
+                "desc"      : "A Medical Project involving AI Model Development to check whether or not eye images can be used for future studies. With retinal section images as a basis."
+            }
+        ]
+    },
+    "about":
+    {
+        "title"         : "About",
+        "content"       : 
+        [
+            {
+                "date"      : "2018-2019",
+                "img"       : "features/about/1.jpg",
+                "title"     : "Application Designer and Developer",
+                "desc"      : "Training to develop and design websites and web applications."
+            },
+            {
+                "date"      : "2022-2024",
+                "img"       : "features/about/2.jpg",
+                "title"     : "AI Developer",
+                "desc"      : "Training to develop and design websites and web applications with AI model of machine learning and deep learning (NLP, Computer Vision...)"
+            },
+            {
+                "date"      : "2024",
+                "img"       : "features/about/3.jpg",
+                "title"     : "CloudTamer",
+                "desc"      : "Our Beginning"
+            }
+        ]
+    },
+    "team":
+    {
+        "title"         : "Team",
+        "content"       : 
+        [
+            {
+                "name"          : "Nicolas Perciot",
+                "role"          : "Lead Developer",
+                "img"           : "features/team/1.jpg",
+                "linkedin"      : "https://www.linkedin.com/in/nicolas-perciot-7a7992137/",
+                "github"        : "https://github.com/nicolasPerciot"
+            }
+        ]
+    }
+}

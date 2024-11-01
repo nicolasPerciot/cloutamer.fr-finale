@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+
+
+
+<header class="masthead">
+            <div class="container">
+        <div class="masthead-subheading">{{features["home"]["text"]}}</div>
+        <div class="masthead-heading text-uppercase">{{features["home"]["title"]}}</div>
+    </div>
+</header>
+
+
+{{ include('section/services.html.twig') }}
+
+
+
+{{ include('section/portfolio.html.twig') }}
+
+
+
+{{ include('section/about.html.twig') }}
+
+
+
+{{ include('section/team.html.twig') }}
+
+
+
+{{ include('section/contact.html.twig') }}
+
+
+
+{{ include('section/modalPortfolio.html.twig') }}
+
+
+
+{% endblock %}

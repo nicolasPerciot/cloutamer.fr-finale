@@ -1,0 +1,51 @@
+<!-- About-->
+<section class="page-section bg-second" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ features["about"]["title"] }}</h2>
+        </div>
+
+
+        <ul class="timeline">
+
+            {% for key, about in features["about"]["content"] %}
+
+                {% if key % 2 == 0 %}
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset(about["img"]) }}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{{about["date"]}}</h4>
+                                <h4 class="subheading">{{about["title"]}}</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">{{about["desc"]}}</p></div>
+                        </div>
+                    </li>                
+
+                {% else %}
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ asset(about["img"]) }}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>{{about["date"]}}</h4>
+                                <h4 class="subheading">{{about["title"]}}</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">{{about["desc"]}}</p></div>
+                        </div>
+                    </li>
+                {% endif %}
+
+            {% endfor %}
+            
+            <li class="timeline-inverted">
+                <div class="flex timeline-image text-center align-items-center">
+                    <h4>
+                        Your
+                        <br />
+                        Project
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>

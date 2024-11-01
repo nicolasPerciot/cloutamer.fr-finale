@@ -1,0 +1,117 @@
+
+    <!-- Services-->
+    <section class="page-section bg-second" id="services">
+        <div class="services-container">
+            <div class="section-heading text-uppercase">
+                <h2 class="services-title section-heading text-uppercase">{{features["services"]["title"]}}</h2>
+                <div class="line"></div>
+            </div>
+            <div class="text-center services-card services-tabs col-12 d-block justify-content-center">
+                
+                <div class="services-category d-flex">
+                {% for services_key, services in features["services"]["content"] %}                       
+                        
+                
+                    
+                        <input id="services-tab-{{services_key}}" type="radio" class="services-tab services-tab-selector" {% if services_key == 0 %}checked="true"{% endif %} name="tab" />
+                        <label for="services-tab-{{services_key}}" class="col services-label services-tab ">
+                            <div class="d-block">
+                                <span class="fa-stack fa-4x mb-2"> 
+                                    <i class="services-icon fas fa-circle fa-stack-2x"></i>
+                                    <i class="{{services["icon"]}} fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <h4 class="my-3">{{services["title"]}}</h4>
+                                </div>
+                            {#<p class="text-muted">{{services["desc"]}}</p> #}
+                        </label>
+                    
+                {% endfor %}                
+                </div>
+                <div class="services-tabsShadow"></div>
+                <div id="services-glider" class="services-glider"></div>
+                <div id="main" class="services-content">
+                    {# {% for services_key, services in features["services"]["content"] %} 
+                        <div class="services-item" id="services-content-{{services_key}}">
+                            <h2 class="services-tab-title services-tab-{{services_key}}">{{services["title"]}}</h2>
+                            <p>
+                                <span class = "numit">{{services["desc"]}}</span>
+                            </p>
+                        </div>
+                    {% endfor %} #}
+
+        
+                    <div class="hero-right">
+                        
+                        {# <div class="layer layer-displayed" data-scene="1"></div>
+                        <div class="layer" data-scene="2"></div>
+                        <div class="layer" data-scene="3"></div> #}
+                        <div class="photo-frame photo-frame-1">
+                            <div class="layer layer-images-first layer-displayed"
+                                style="background-image: url('https://images.unsplash.com/photo-1495468286609-71018e87abc5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=987c55a292efaa0adb9acfc26c06e22a&auto=format&fit=crop&w=670&q=80')"
+                                data-scene="1"></div>
+                            <div class="layer layer-images-first"
+                                style="background-image: url('https://images.unsplash.com/photo-1536099876051-79f4cbffeed1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=451b9215ee8acc20d5d7ea354aab570e&auto=format&fit=crop&w=1350&q=80')"
+                                data-scene="2"></div>
+                            <div class="layer layer-images-first"
+                                style="background-image: url('https://images.unsplash.com/photo-1512821062947-6eda5253c3e2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=305dedf0e09581de0ee68ab2c9523955&auto=format&fit=crop&w=1351&q=80')"
+                                data-scene="3"></div>
+                            <div class="cover"></div>
+                        </div>
+                        <div class="photo-name">
+                            <div class="photo-name__wrapper">
+                                {% for services_key, services in features["services"]["content"] %}
+                                    <div class="layer layer-displayed services-item" id="services-content-{{services_key}}" data-scene="{{services_key}}">
+                                        <h2 class="photo-name__title services-tab-title services-tab-{{services_key}}">{{services["title"]}}</h2>
+                                        <p>
+                                            <span class = "numit">{{services["desc"]}}</span>
+                                        </p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="photo-frame photo-frame-2">
+                        
+                            <div class="layer layer-images-second layer-displayed"
+                                style="background-image: url('{{asset("features/portfolio/1.jpg")}}')"
+                                data-scene="1"></div>
+                            <div class="layer layer-images-second"
+                                style="background-image: url('{{asset("features/portfolio/2.jpg")}}')"
+                                data-scene="2"></div>
+                            <div class="layer layer-images-second"
+                                style="background-image: url('{{asset("features/portfolio/3.jpg")}}')"
+                                data-scene="3"></div>
+                            <div class="cover"></div>
+                        </div>
+                        <div class="photo-frame photo-frame-3">
+
+                        {% for services_key, services in features["services"]["content"] %}
+                        
+                            <div class="layer-images-third layer-displayed row mb-2 justify-content-center">
+                                <div id="services-carousel-{{services_key}}" class="carousel services-carousel"">
+                                    <div class="carousel-inner" role="listbox">
+
+                                            
+                                        {% for services_carousel_images_key, services_carousel_images in services["carousel_images"] %}
+
+                                            <div class="carousel-item {% if services_key == 0 %}active{% endif %}">
+                                                <div class="col-md-4 p-2 align-self-center">
+                                                    <img src="{{ asset(services_carousel_images) }}" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        
+                                        {% endfor %}
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {% endfor %}
+                            <div class="cover"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+

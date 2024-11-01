@@ -1,0 +1,33 @@
+<!-- Portfolio Grid-->
+<section class="page-section bg-first text-dark" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ features["portfolio"]["title"] }}</h2>
+        </div>
+        <div class="d-flex justify-content-center ms-4">
+
+            {% for key, portfolio in features["portfolio"]["content"] %}
+                <div class="col-lg-4 col-sm-6 mb-4 portoflio-wrapper mx-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-face portfolio-link" data-bs-toggle="modal" href="#portfolioModal{{key}}">
+                            <div class="portfolio-content">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src={{ asset(portfolio["img"]) }} alt="..." />
+                            </div>
+                        </a>
+                        <div class="portfolio-face portfolio-caption bg-light">
+                            <div class="portfolio-content">
+                                <div class="portfolio-caption-heading">{{ portfolio["title"] }}</div>
+                                <div class="portfolio-caption-subheading text-muted">{{ portfolio["desc"] }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</section>
